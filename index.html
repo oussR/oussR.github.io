@@ -22,6 +22,12 @@
 
 <header class="hero">
     <div class="hero-content">
+        <div class="profile-photo-container">
+            <img src="profile.jpg" alt="Oussama Remoune" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="profile-photo-placeholder" style="display:none;">
+                <span>OR</span>
+            </div>
+        </div>
         <h1>Oussama Remoune</h1>
         <p class="hero-subtitle">Computer Science Student • AI & Software Development</p>
         <p class="hero-description">Passionate about building innovative solutions and exploring the frontiers of artificial intelligence</p>
@@ -48,11 +54,52 @@
             <div class="feature-icon">🎓</div>
             <h3>Education</h3>
             <p>Computer Science Student focused on AI and Software Development</p>
+            <button class="see-more-btn" onclick="toggleEducation()">See More</button>
+            <div class="expandable-content" id="education-details" style="display: none;">
+                <div class="education-details">
+                    <p><strong>University:</strong> Mohamed Khider University in Biskra</p>
+                    <p><strong>Current Level:</strong> 1st Master</p>
+                    <p><strong>Field:</strong> Computer Science / AI</p>
+                </div>
+            </div>
         </div>
         <div class="feature-card">
             <div class="feature-icon">💻</div>
             <h3>Skills</h3>
-            <p>Java, Python, JavaFX, MySQL, and more</p>
+            <p>Java, Python, JavaFX, MySQL, HTML, CSS, C, and more</p>
+            <button class="see-more-btn" onclick="toggleSkills()">See More</button>
+            <div class="expandable-content" id="skills-details" style="display: none;">
+                <div class="skills-details">
+                    <div class="skill-detail-item">
+                        <strong>Java:</strong>
+                        <p>I know how to build applications in Android Studio</p>
+                    </div>
+                    <div class="skill-detail-item">
+                        <strong>Python:</strong>
+                        <p>Proficient in Python programming for AI and software development</p>
+                    </div>
+                    <div class="skill-detail-item">
+                        <strong>JavaFX:</strong>
+                        <p>Experience in building desktop applications with JavaFX</p>
+                    </div>
+                    <div class="skill-detail-item">
+                        <strong>MySQL:</strong>
+                        <p>Database design and management with MySQL</p>
+                    </div>
+                    <div class="skill-detail-item">
+                        <strong>HTML:</strong>
+                        <p>Creating structured and semantic web pages</p>
+                    </div>
+                    <div class="skill-detail-item">
+                        <strong>CSS:</strong>
+                        <p>Styling and designing modern, responsive web interfaces</p>
+                    </div>
+                    <div class="skill-detail-item">
+                        <strong>C:</strong>
+                        <p>System programming and low-level development in C</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="feature-card">
             <div class="feature-icon">🚀</div>
@@ -65,6 +112,34 @@
 <footer>
     <p>&copy; 2025 Oussama Remoune. All rights reserved.</p>
 </footer>
+
+<script>
+function toggleEducation() {
+    const details = document.getElementById('education-details');
+    const btn = event.target;
+    
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        btn.textContent = 'See Less';
+    } else {
+        details.style.display = 'none';
+        btn.textContent = 'See More';
+    }
+}
+
+function toggleSkills() {
+    const details = document.getElementById('skills-details');
+    const btn = event.target;
+    
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        btn.textContent = 'See Less';
+    } else {
+        details.style.display = 'none';
+        btn.textContent = 'See More';
+    }
+}
+</script>
 
 </body>
 </html>
