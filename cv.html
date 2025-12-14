@@ -2,36 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oussama Remoune - Curriculum Vitae and Professional Experience">
     <title>Oussama Remoune | CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="projects.html">Projects</a>
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">OR</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cv.html" class="active">CV</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
 </nav>
 
-<section class="card">
-    <h2>Curriculum Vitae</h2>
-    <p><strong>Name:</strong> Oussama Remoune</p>
-    <p><strong>Field:</strong> Computer Science / AI</p>
-    <p><strong>Skills:</strong> Java, Python, JavaFX, MySQL</p>
-</section>
+<header class="page-header">
+    <h1>Curriculum Vitae</h1>
+    <p>My professional background and skills</p>
+</header>
 
-<section class="card">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
+<main class="container">
+    <section class="card">
+        <h2>Personal Information</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <strong>Name:</strong>
+                <span>Oussama Remoune</span>
+            </div>
+            <div class="info-item">
+                <strong>Field:</strong>
+                <span>Computer Science / AI</span>
+            </div>
+            <div class="info-item">
+                <strong>Status:</strong>
+                <span>Student</span>
+            </div>
+        </div>
+    </section>
 
-    <div class="social">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Telegram</a>
-    </div>
-</section>
+    <section class="card">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">JavaFX</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>© 2025 Oussama Remoune</footer>
+    <section class="card">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Computer Science</h3>
+                    <p class="timeline-date">Present</p>
+                    <p>Currently pursuing studies in Computer Science with focus on Artificial Intelligence and Software Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </div>
+        <div class="social">
+            <a href="#" class="social-link" aria-label="Instagram">
+                <span>📷</span> Instagram
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+                <span>👥</span> Facebook
+            </a>
+            <a href="#" class="social-link" aria-label="Telegram">
+                <span>✈️</span> Telegram
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Oussama Remoune. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
